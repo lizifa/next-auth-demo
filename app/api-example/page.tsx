@@ -4,15 +4,12 @@ import { signIn, signOut, useSession } from 'next-auth/react';
 import { useEffect, useState } from 'react';
 
 export default function ApiExample() {
-  const { data: session, status } = useSession();
   const [sessionInfo, setSessionInfo] = useState<any>(null);
   const [loading, setLoading] = useState(false);
 
   const getSession = async () => {
     setLoading(true);
     try {
-      // await fetch('/api/app/helloApi');
-
       const response = await fetch('/api/auth/session');
       const data = await response.json();
       setSessionInfo(data);
