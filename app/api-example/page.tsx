@@ -55,7 +55,15 @@ export default function ApiExample() {
               disabled={loading}
               className="bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400 text-white px-4 py-2 rounded"
             >
-              {loading ? '获取中...' : 'github登录'}
+              github
+            </button>
+
+            <button
+              onClick={() => signIn('google')}
+              disabled={loading}
+              className="bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400 text-white px-4 py-2 rounded"
+            >
+              google
             </button>
             
             {sessionInfo && (
