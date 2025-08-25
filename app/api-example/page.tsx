@@ -1,6 +1,6 @@
 'use client';
 
-import { signIn, signOut, useSession } from 'next-auth/react';
+import { signIn, signOut } from 'next-auth/react';
 import { useEffect, useState } from 'react';
 
 export default function ApiExample() {
