@@ -10,7 +10,7 @@ export default function ApiExample() {
   const getSession = async () => {
     setLoading(true);
     try {
-      const response = await fetch('/api/auth/session');
+      const response = await fetch(`${window.location.origin}/api/auth/session`);
       const data = await response.json();
       setSessionInfo(data);
     } catch (error) {
