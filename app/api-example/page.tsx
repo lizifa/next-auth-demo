@@ -51,7 +51,7 @@ export default function ApiExample() {
             </button>
 
             <button
-              onClick={() => signIn('github', { callbackUrl: `${window.location.origin}/api-example` })}
+              onClick={() => signIn('github', { callbackUrl: `http://nextauth-demo.fcv3.1453599496106016.ap-southeast-1.fc.devsapp.net/api-example` })}
               disabled={loading}
               className="bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400 text-white px-4 py-2 rounded"
             >
@@ -59,7 +59,7 @@ export default function ApiExample() {
             </button>
 
             <button
-              onClick={() => signIn('google',{ callbackUrl: `${window.location.origin}/api-example` })}
+              onClick={() => signIn('google',{ callbackUrl: `http://nextauth-demo.fcv3.1453599496106016.ap-southeast-1.fc.devsapp.net/api-example` })}
               disabled={loading}
               className="bg-blue-500 hover:bg-blue-600 disabled:bg-gray-400 text-white px-4 py-2 rounded"
             >
